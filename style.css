@@ -1,1 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background:linear-gradient(to right, black, black, gray)
+}
+.calculator-box {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+}
+.calculator-box > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid rgba(192, 192, 192, 0.63);
+    background-color: rgba(99, 98, 98, 0.363);
+    color: white;
+    outline: none;
+}
+.calculator-box > button:hover {
+    background-color: rgba(128, 128, 128, 0.897);
+}
+.span2 {
+    grid-column: span 2;
+}
+.display {
+    grid-column: 1 / -1;
+    background-color: rgba(192, 192, 192, 0.253);
+    border-top: 1px solid rgba(192, 192, 192, 0.664);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 2rem;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+}
+.prev-input {
+    font-size: 1.5rem;
+    color:rgba(255, 255, 255, 0.767);
+}
+@media screen and (min-width: 768px) {
+    .calculator-box {
+        grid-template-columns: repeat(4,100px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .calculator-box {
+        grid-template-columns: repeat(4,100px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    }
+}
+
 
