@@ -1,3 +1,3 @@
 # Calculator
 
-https://github.com/Tamarchika/Calculator.git
+https://Tamarchika.Calculator.github.io
